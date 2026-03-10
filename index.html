@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preload" as="image" href="background.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Betania+Patmos+In&family=Pangolin&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>especially for nikkituz</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div id="firstDiv" class="parent-div">
+        <h1 id="fText">З днем народження софік!)</h2>
+        <button id="button1">лец ґьоуу</button>
+        
+    </div>
+
+    <div class="hidden" id="secondDiv">
+        <h2 class="main-title">іх била четвера</h2>
+
+        <div class="heroes-row">
+        <img src="css/stan.png" class="img-btn" id="pic1" alt="Кнопка 1">
+        <img src="css/kyle.png" class="img-btn" id="pic2" alt="Кнопка 2">
+        <img src="css/cartman.png" class="img-btn" id="pic3" alt="Кнопка 3">
+        <img src="css/kenny.png" class="img-btn" id="pic4" alt="Кнопка 4">
+    </div>
+    <button id="backToMusic" style="margin-top: 30px;">бек</button>
+    </div>
+
+    <div class="hidden parent-div" id="photodiv">
+    <h2 class="main-title">спільні фото</h2>
+    <div style="display: flex; gap: 10px;">
+        <button id="backToFirst">бекінг</button> <button id="nextphoto">Некст ван</button>
+    </div>
+
+    <div class="heroes-grid"> <img src="css/roblox.jpg" class="hero-static hidden" id="guest1">
+        <img src="css/faki.jpg" class="hero-static hidden" id="guest2">
+        <img src="css/fly.jpg" class="hero-static hidden" id="guest3">
+        <img src="css/solidno.jpg" class="hero-static hidden" id="guest4">
+    </div>
+    
+
+</div> 
+
+
+    <div class="hidden" id="thirdDiv">
+        <h2 id="persText"></h2>
+
+            <div id="final-butt" class="hidden">
+        <button id="backToSelect">мазафакери</button>
+        <button id="theEnd">канес</button>
+            </div>
+    </div>
+
+    <div class="hidden parent-div" id="musicDiv">
+    <h2 class="main-title">us</h2>
+    <div style="display: flex; gap: 10px;">
+        <button id="backToPhotos">Назад до фото</button> <button id="toGreetings">4 чела</button>
+    </div>
+    
+    <div class="music-grid">
+        <div class="song-card" onclick="selectSong('Weezer - Island In The Sun.mp3', 'Weezer - Island In The Sun')">
+            <img src="css/Island In The Sun.jpg" alt="Song 1">
+            <p>Island In The Sun</p>
+        </div>
+        <div class="song-card" onclick="selectSong('Falling For You - Weezer.mp3', 'Falling For You')">
+            <img src="css/falling for you.jpg" alt="Song 2">
+            <p>Falling For You</p>
+        </div>
+        <div class="song-card" onclick="selectSong('Weezer - King Of The World.mp3', 'King Of The World')">
+            <img src="css/weezer king of the world.jpg" alt="Song 3">
+            <p>King Of The World</p>
+        </div>
+        <div class="song-card" onclick="selectSong('I Want You To.mp3', 'I Want You To')">
+            <img src="css/Weezer - (If You're Wondering If I Want You To) I Want You To.jpg" alt="Song 4">
+            <p>I Want You To</p>
+        </div>
+    </div>
+
+    
+    
+    <div class="player-controls">
+        <p id="current-song-name">нонє</p>
+        <button id="masterPlayBtn">Play/Pause</button>
+    </div>
+ 
+    <audio id="mainAudio"></audio>
+    <!-- <button id="toGreetings">Далі до привітань</button> -->
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
