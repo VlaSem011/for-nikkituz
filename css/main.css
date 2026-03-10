@@ -1,0 +1,164 @@
+.pangolin-regular {
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+}
+
+#fText { font-family: "Pangolin", cursive; color:rgb(255, 152, 152);}
+#button1,#nextphoto,#toGreetings,#backToFirst, #backToPhotos,#backToMusic { 
+    font-family: "Pangolin", cursive;
+    background-color:cornflowerblue;
+    color:white;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 22px;    
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.img-btn {
+    cursor: pointer; 
+}
+
+#button1:hover {
+    background-color: #3582ff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px #054dc9;
+}
+
+.hidden{
+    display:none !important;
+}
+
+.parent-div {
+    display: flex;     
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+    text-align: center;
+}
+
+#secondDiv {
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.heroes-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;        
+}
+
+.main-title {
+    font-family: "Pangolin", cursive;
+    font-size: 35px;
+    color: rgb(255, 152, 152); 
+}
+
+.heroes-grid {
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: center;
+    align-items: center;
+    gap: 30px;   
+    max-width: 450px;
+    margin: 20px auto;    
+}
+
+.hero-static {
+    width: 180px;      
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+
+.hero-static:not(.hidden) {
+    display: block !important;
+    animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+#finalMenu {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#backToSelect, #theEnd {
+    font-family: "Pangolin", cursive;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #000;
+    transition: 0.2s;
+}
+
+#backToSelect { background-color: cornflowerblue; color: white; }
+#theEnd { background-color: cornflowerblue; color: white; }
+
+#backToSelect:hover, #theEnd:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.music-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.song-card {
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.song-card:hover { transform: scale(1.05); }
+
+.song-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+.song-card p {
+    font-family: "Pangolin", cursive;
+    margin-top: 5px;
+}
+
+#masterPlayBtn {
+    font-family: "Pangolin", cursive;
+    padding: 10px 20px;
+    background-color: #ff9898;
+    border-radius: 10px;
+    cursor: pointer;
+}
